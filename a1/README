@@ -1,0 +1,39 @@
+Brendan LeTourneau
+and
+Connor Rowland
+CS530, Spring 2019
+
+===FILE MANIFEST===
+README
+xbd.cpp
+xbd.h
+makefile
+
+==COMPILE INSTRUCTIONS==
+run make in source directory with all files listed in File Manifest
+
+==OPERATING INSTRUCTIONS==
+In directory with xbd executable run
+
+./xbd -b filepath
+for binary output and 
+
+./xbd filepath
+for hexadecimal output
+
+==DESIGN DECISIONS==
+We read in the command line file into an unsigned character array.
+
+If no flag is given we print the characters as hexidecimal by
+converting the chars to integers with the int() cast, then convert
+the int number to hex using cout << formatting functions.
+
+If the binary flag is given we print the character as binary by
+converting the chars to integers with the int() cast, then convert
+the integer number using a homemade numToBinary function which 
+returns a binary byte string.
+
+==LESSONS LEARNED==
+We learned that how you store the file bytes is very important. At first,
+we stored the data as signed characters in ASCII, but then realized our mistake
+when trying our program on picture files.
