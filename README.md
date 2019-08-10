@@ -40,10 +40,13 @@ Note - each id, op, =, and ; will have a space as it's precedent and antecedent.
 The open parenthesis will have a space as it's precedent but it may or may not
 have a space immediately following it. The converse is true for the closing
 parenthesis (guaranteed a space as it's antecedent but not necessarily preceding it).
+
 An id is any combination of digits and char.
 The first position of the identifier must contain a char
+
 A digit is one of: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-A charis one of:a, b, c, d, e, f, g, h, i, j, k, l m, n, o, p, q, r, s, t, u, v,
+
+A char is one of:a, b, c, d, e, f, g, h, i, j, k, l m, n, o, p, q, r, s, t, u, v,
 w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 
 An op is one of: +, -, *, /, %
